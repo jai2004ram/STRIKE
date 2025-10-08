@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIKE - Education Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Special+Gothic+Expanded+One&family=Tektur:wdth,wght@88.6,400..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>STRIKE</h1>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Tutorials</a></li>
+            <li><a href="#instructor">About Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="auth-buttons">
+                <a href="#contact" class="btn-login">Login</a>
+                <a href="#contact" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Turn Your Logic Into <span>LEGACY</span></h1>
+            <p>A community of coders, making the world a better place. Learn, build, and grow with the best developers
+                in the industry.</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>202K+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4+</h3>
+                    <p>Courses</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Instructors</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="YouTube">▶</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#courses" class="btn btn-primary">Start Paid Learning</a>
+                <a href="#" class="btn btn-secondary">▶ Watch Demo</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <span class="live-indicator">Live Coding</span>
+                </div>
+                <div class="code-content">
+                    <div><span class="keyword">void</span> <span class="function">startCoding</span>() {</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">if</span> (isActive) {</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;cout << <span class="string">"[SESSION] Coding started"</span>;</div>
+                    <div>&nbsp;&nbsp;}</div>
+                    <div></div>
+                    <div>&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">const auto&</span> member :
+                        members) {</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;cout << <span class="string">"[WORK] "</span>
+                            << member</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< <span class="string">" is
+                                        contributing..."</span>;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;(*projectCount)++;</div>
+                                <div>&nbsp;&nbsp;}</div>
+                                <div>}</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <div class="section-header">
+            <h2>Our <span>Premium Courses</span></h2>
+            <p>Discover our comprehensive learning programs designed by industry experts to advance your career and
+                technical skills.</p>
+        </div>
+
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="strike.jpg">
+                </div>
+                <div class="course-info">
+                    <div class="course-meta">
+                        <span class="meta-badge">BEGINNER TO ADVANCED</span>
+                        <span class="meta-badge">120 lectures</span>
+                    </div>
+                    <h3>Web Development + Blockchain + DSA</h3>
+                    <p class="instructor">by Rohit Negi & Aditya Tandon</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Complete full-stack course covering Web
+                        Development, Blockchain technology, and Data Structures & Algorithms.</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">🔴 LIVE</span>
+                    🎨
+                </div>
+                <div class="course-info">
+                    <div class="course-meta">
+                        <span class="meta-badge">BEGINNER TO ADVANCED</span>
+                        <span class="meta-badge">20 lectures</span>
+                    </div>
+                    <h3>High Level Design (HLD) Masterclass</h3>
+                    <p class="instructor">by Aditya Tandon</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Master system design principles and
+                        learn how to build scalable applications from scratch.</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">
+                    <span class="course-badge">🔴 LIVE</span>
+                    🧮
+                </div>
+                <div class="course-info">
+                    <div class="course-meta">
+                        <span class="meta-badge">BEGINNER TO ADVANCED</span>
+                        <span class="meta-badge">200 lectures</span>
+                    </div>
+                    <h3>Data Structures & Algorithms (DSA)</h3>
+                    <p class="instructor">by Rohit Negi</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Master DSA concepts to crack coding
+                        interviews at top tech companies with 200+ problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        
+        <div class="video-container">
+            <video src="5483085-uhd_2732_1440_25fps (1).mp4" autoplay muted loop></video>
+        </div>
+        <div class="video-container">
+            <video src="video3.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="cursor-glow"></div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="instructor" class="section">
+        <div class="section-header">
+            <h2>Meet Your <span>Instructor</span></h2>
+            <p>Learn from industry experts with real-world experience and proven track records</p>
+        </div>
+
+        <div class="instructor-container">
+            <div class="instructor-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                    alt="Rohit Negi">
+            </div>
+            <div class="instructor-info">
+                <h2>Rohit Negi 🏆</h2>
+                <div class="instructor-role">
+                    <span class="role-badge">Founder & Lead Instructor</span>
+                    <span class="role-badge">Ex-@Uber</span>
+                </div>
+                <div class="instructor-badges">
+                    <span class="badge">IIT Graduate</span>
+                    <span class="badge">2 Cr+ Package</span>
+                    <span class="badge">Industry Expert</span>
+                </div>
+                <p class="instructor-desc">Heartfelt Problem Solver, Instructor, and Visionary Leader. Got Highest
+                    Placement in India of 2 Cr +. Post Graduate from IIT G, GATE-CSE'20 AIR - 202</p>
+                <div class="cta-buttons">
+                    <a href="#courses" class="btn btn-primary">Start Learning</a>
+                    <a href="#" class="btn btn-secondary">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="section-header">
+            <h2>Student <span>Reviews</span></h2>
+            <p>See what our students say about their learning experience</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">A</div>
+                    <div>
+                        <h4>Ankit Sharma</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Best DSA course I've ever taken! The explanations are crystal clear and the
+                    problem-solving approach helped me crack interviews at top tech companies. Highly recommended!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">P</div>
+                    <div>
+                        <h4>Priya Singh</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The Web Development + Blockchain course is comprehensive and well-structured.
+                    Rohit sir's teaching style makes complex concepts easy to understand. Worth every penny!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">R</div>
+                    <div>
+                        <h4>Rahul Kumar</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Amazing instructor with real industry experience. The HLD masterclass helped me
+                    understand system design from scratch. Now I feel confident in design interviews!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">S</div>
+                    <div>
+                        <h4>Sneha Patel</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"The community support is outstanding! I got my dream job after completing the
+                    full stack course. The live sessions and doubt clearing are the best features."</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">V</div>
+                    <div>
+                        <h4>Vikram Mehta</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"Practical, hands-on approach to learning. The projects in the course are
+                    industry-relevant and helped me build a strong portfolio. Thank you STRIKE team!"</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">M</div>
+                    <div>
+                        <h4>Meera Reddy</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">"From zero to hero in coding! The structured curriculum and expert guidance
+                    transformed my career. Landed a 12 LPA package after completing the DSA course."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Auth Section -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Get <span>Started</span></h2>
+            <p>Join thousands of students transforming their careers</p>
+        </div>
+
+        <div class="auth-container">
+            <div class="auth-form">
+                <h3>Login</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                </form>
+            </div>
+
+            <div class="auth-form">
+                <h3>Register</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email Address</label>
+                        <input type="email" id="reg-email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" placeholder="Create password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; text-align: left; margin-bottom: 3rem;">
+                <div>
+                    <h3 style="color: var(--accent-purple); margin-bottom: 1rem; font-size: 1.5rem;">⚡ STRIKE</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Empowering the next generation of
+                        developers with world-class education and mentorship.</p>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#">in</a>
+                        <a href="#">▶</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem;"><a href="#home"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">Home</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#courses"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">Courses</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#instructor"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">About
+                                Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#reviews"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Courses</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">Web
+                                Development</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">DSA
+                                Masterclass</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">System
+                                Design</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease;">Blockchain</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Contact</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem; color: var(--text-secondary);">📧 info@strike.edu</li>
+                        <li style="margin-bottom: 0.8rem; color: var(--text-secondary);">📱 +91 9876543210</li>
+                        <li style="margin-bottom: 0.8rem; color: var(--text-secondary);">📍 India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid rgba(124, 58, 237, 0.3); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="color: var(--text-secondary);">© 2025 STRIKE. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Privacy
+                        Policy</a>
+                    <a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Terms of
+                        Service</a>
+                    <a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">Cookie
+                        Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
