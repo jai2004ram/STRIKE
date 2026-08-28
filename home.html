@@ -85,22 +85,24 @@
                     <span class="live-indicator">Live Coding</span>
                 </div>
                 <div class="code-content">
-                    <div><span class="keyword">void</span> <span class="function">startCoding</span>() {</div>
-                    <div>&nbsp;&nbsp;<span class="keyword">if</span> (isActive) {</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;cout << <span class="string">"[SESSION] Coding started"</span>;</div>
-                    <div>&nbsp;&nbsp;}</div>
-                    <div></div>
-                    <div>&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">const auto&</span> member :
-                        members) {</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;cout << <span class="string">"[WORK] "</span>
-                            << member</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< <span class="string">" is
-                                        contributing..."</span>;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;(*projectCount)++;</div>
-                                <div>&nbsp;&nbsp;}</div>
-                                <div>}</div>
-                    </div>
-                </div>
+    <div><span class="keyword">const</span> <span class="function">buildFuture</span> = () => {</div>
+
+    <div>&nbsp;&nbsp;<span class="keyword">if</span> (innovationMode) {</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">"[DEVOCEAN] Ideas becoming products"</span>);</div>
+    <div>&nbsp;&nbsp;}</div>
+
+    <div></div>
+
+    <div>&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">const</span> creator of developers) {</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;creator.collaborate();</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;productsBuilt++;</div>
+    <div>&nbsp;&nbsp;}</div>
+
+    <div></div>
+
+    <div>&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Ship. Scale. Succeed."</span>;</div>
+    <div>}</div>
+</div>
             </div>
     </section>
 
